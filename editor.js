@@ -118,6 +118,15 @@
   }
   document.addEventListener('click', function (e) {
     if (e.target.closest && e.target.closest('.ed-chip')) return;
+    var im = e.target.closest && e.target.closest('img');
+    if (im && im.closest('.rb') && !im.closest('.zb')) {
+      e.preventDefault();
+      lastBlock = im.closest('.rb');
+      showChip(im, '<span>Фото: ' + (im.getAttribute('alt') || 'без подписи') + '</span>', TGC ? [
+        {label: '✎ Хочу другое фото', run: function () { photoWish(im); }}
+      ] : []);
+      return;
+    }
     var a = e.target.closest && e.target.closest('a');
     var s = e.target.closest && e.target.closest('summary');
     if (s) e.preventDefault();
@@ -326,6 +335,22 @@
       .then(function (r) { return r.json(); })
       .then(function (j) { if (!j.ok) throw new Error('tg'); st.textContent = '✓ Пожелание отправлено. Спасибо!'; })
       .catch(function () { st.textContent = 'Не удалось отправить пожелание. Попробуйте ещё раз.'; });
+  }
+  function photoWish(im) {
+    var where = (lastBlock && lastBlock.getAttribute('data-label')) || '';
+    var t = prompt('Какое фото вы хотели бы вместо этого? Опишите словами: что на нём должно быть, или напишите, что не нравится (тёмное, не видно лиц, повторяется и т.п.).');
+    if (!t || !t.trim()) return;
+    var st = document.getElementById('ed-status');
+    st.textContent = 'Отправляю пожелание про фото…';
+    var cap = ('Фото-пожелание Татьяны. Страница: ' + document.title.replace('Редактор: ', '') + '. Раздел: ' + where +
+               '. Фото: ' + (im.getAttribute('alt') || im.getAttribute('src')) + ' (' + (im.getAttribute('src') || '').split('/').pop() + '). Пожелание: ' + t.trim()).slice(0, 1000);
+    function post(method, body) {
+      return fetch('https://api.telegram.org/bot' + TGC.token + '/' + method, {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(body)}).then(function (r) { return r.json(); });
+    }
+    var p = /^https?:/.test(im.src) ? post('sendPhoto', {chat_id: TGC.chat, photo: im.src, caption: cap}) : Promise.resolve({ok: false});
+    p.then(function (j) { return j.ok ? j : post('sendMessage', {chat_id: TGC.chat, text: cap}); })
+      .then(function (j) { if (!j.ok) throw new Error('tg'); st.textContent = '✓ Пожелание про фото отправлено. Спасибо!'; })
+      .catch(function () { st.textContent = 'Не удалось отправить. Попробуйте ещё раз.'; });
   }
   document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') sendNow(); });
   if (TGC) document.body.classList.add('online');
