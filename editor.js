@@ -48,7 +48,7 @@
         lupa.className = 'ed-lupa';
         lupa.setAttribute('contenteditable', 'false');
         lupa.setAttribute('data-ed-ui', '1');
-        lupa.setAttribute('title', 'Этот текст важен для поиска в Яндексе. Лучше не менять.');
+        lupa.setAttribute('title', 'Этот текст важен для поиска в Яндексе и Google. Лучше не менять.');
         lupa.innerHTML = '<span class="ed-ic">🔍</span><span class="ed-tip">Этот текст лучше не менять: он совпадает с запросами родителей в Яндексе и Google (например, «частный детский сад в Ставрополе»). Если замените, редактор сначала спросит, уверены ли вы.</span>';
         el.appendChild(lupa);
       }
