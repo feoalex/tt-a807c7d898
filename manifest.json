@@ -1,0 +1,828 @@
+{
+ "revision": 168,
+ "manifest": [
+  {
+   "page": "glavnaya",
+   "file": "01-SxvCBgVT.html",
+   "id": "SxvCBgVT",
+   "type": "html",
+   "style_only": false,
+   "label": "Частный детский сад на Кубанском проезде, где вашего малыша "
+  },
+  {
+   "page": "glavnaya",
+   "file": null,
+   "id": "tEZdcA6q",
+   "type": "form",
+   "label": "form"
+  },
+  {
+   "page": "glavnaya",
+   "file": null,
+   "id": "RYhZtyKy",
+   "type": "form",
+   "label": "form"
+  },
+  {
+   "page": "glavnaya",
+   "file": "04-hEDnqK5Z.html",
+   "id": "hEDnqK5Z",
+   "type": "html",
+   "style_only": false,
+   "label": "Что тревожит родителей перед выбором детского сада"
+  },
+  {
+   "page": "glavnaya",
+   "file": "05-BdG9BtB8.html",
+   "id": "BdG9BtB8",
+   "type": "html",
+   "style_only": false,
+   "label": "Из нашей жизни"
+  },
+  {
+   "page": "glavnaya",
+   "file": "06-rwdGzT73.html",
+   "id": "rwdGzT73",
+   "type": "html",
+   "style_only": false,
+   "label": "Секунды из жизни сада"
+  },
+  {
+   "page": "glavnaya",
+   "file": "07-KyNMRHWk.html",
+   "id": "KyNMRHWk",
+   "type": "html",
+   "style_only": false,
+   "label": "Чем заняты дети, пока вы на работе"
+  },
+  {
+   "page": "glavnaya",
+   "file": "08-DYAuS6Rp.html",
+   "id": "DYAuS6Rp",
+   "type": "html",
+   "style_only": false,
+   "label": "Блок DYAuS6Rp"
+  },
+  {
+   "page": "glavnaya",
+   "file": "09-GUD4nixp.html",
+   "id": "GUD4nixp",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок GUD4nixp"
+  },
+  {
+   "page": "glavnaya",
+   "file": null,
+   "id": "UABZKBnv",
+   "type": "header",
+   "label": "header"
+  },
+  {
+   "page": "glavnaya",
+   "file": "11-gLUtPq7W.html",
+   "id": "gLUtPq7W",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок gLUtPq7W"
+  },
+  {
+   "page": "glavnaya",
+   "file": "12-mfQr3UTM.html",
+   "id": "mfQr3UTM",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок mfQr3UTM"
+  },
+  {
+   "page": "glavnaya",
+   "file": "13-C7kaE3Dr.html",
+   "id": "C7kaE3Dr",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок C7kaE3Dr"
+  },
+  {
+   "page": "glavnaya",
+   "file": "14-Snt2PjvL.html",
+   "id": "Snt2PjvL",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок Snt2PjvL"
+  },
+  {
+   "page": "glavnaya",
+   "file": "15-pzFLRg2W.html",
+   "id": "pzFLRg2W",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок pzFLRg2W"
+  },
+  {
+   "page": "glavnaya",
+   "file": "16-cHRQrGnu.html",
+   "id": "cHRQrGnu",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок cHRQrGnu"
+  },
+  {
+   "page": "glavnaya",
+   "file": "17-ZM4Tpjq7.html",
+   "id": "ZM4Tpjq7",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок ZM4Tpjq7"
+  },
+  {
+   "page": "glavnaya",
+   "file": "18-qMc2JNyd.html",
+   "id": "qMc2JNyd",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок qMc2JNyd"
+  },
+  {
+   "page": "glavnaya",
+   "file": "19-nVAshTcL.html",
+   "id": "nVAshTcL",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок nVAshTcL"
+  },
+  {
+   "page": "glavnaya",
+   "file": "20-nEsFb5rH.html",
+   "id": "nEsFb5rH",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок nEsFb5rH"
+  },
+  {
+   "page": "glavnaya",
+   "file": "21-97Ee9BMB.html",
+   "id": "97Ee9BMB",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок 97Ee9BMB"
+  },
+  {
+   "page": "glavnaya",
+   "file": "22-byh5qYF7.html",
+   "id": "byh5qYF7",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок byh5qYF7"
+  },
+  {
+   "page": "glavnaya",
+   "file": "23-exdT96cu.html",
+   "id": "exdT96cu",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок exdT96cu"
+  },
+  {
+   "page": "glavnaya",
+   "file": "24-H5nyeXSj.html",
+   "id": "H5nyeXSj",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок H5nyeXSj"
+  },
+  {
+   "page": "glavnaya",
+   "file": "25-6z2KYTvG.html",
+   "id": "6z2KYTvG",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок 6z2KYTvG"
+  },
+  {
+   "page": "glavnaya",
+   "file": "26-viUzp6UT.html",
+   "id": "viUzp6UT",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок viUzp6UT"
+  },
+  {
+   "page": "glavnaya",
+   "file": "27-FkuFp69z.html",
+   "id": "FkuFp69z",
+   "type": "html",
+   "style_only": false,
+   "label": "Блок FkuFp69z"
+  },
+  {
+   "page": "glavnaya",
+   "file": "28-8tijAP99.html",
+   "id": "8tijAP99",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок 8tijAP99"
+  },
+  {
+   "page": "glavnaya",
+   "file": "29-yVNAsaus.html",
+   "id": "yVNAsaus",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок yVNAsaus"
+  },
+  {
+   "page": "glavnaya",
+   "file": "30-mbZyaLHH.html",
+   "id": "mbZyaLHH",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок mbZyaLHH"
+  },
+  {
+   "page": "glavnaya",
+   "file": "31-7RWKfYEM.html",
+   "id": "7RWKfYEM",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок 7RWKfYEM"
+  },
+  {
+   "page": "glavnaya",
+   "file": "32-usWFtRYw.html",
+   "id": "usWFtRYw",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок usWFtRYw"
+  },
+  {
+   "page": "glavnaya",
+   "file": "33-etnAerPk.html",
+   "id": "etnAerPk",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок etnAerPk"
+  },
+  {
+   "page": "glavnaya",
+   "file": "34-Unuhzduw.html",
+   "id": "Unuhzduw",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок Unuhzduw"
+  },
+  {
+   "page": "glavnaya",
+   "file": "35-uGiGRpLT.html",
+   "id": "uGiGRpLT",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок uGiGRpLT"
+  },
+  {
+   "page": "glavnaya",
+   "file": "36-4APsgfMZ.html",
+   "id": "4APsgfMZ",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок 4APsgfMZ"
+  },
+  {
+   "page": "glavnaya",
+   "file": "37-PvNZGdEh.html",
+   "id": "PvNZGdEh",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок PvNZGdEh"
+  },
+  {
+   "page": "glavnaya",
+   "file": "38-qshAcdLD.html",
+   "id": "qshAcdLD",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок qshAcdLD"
+  },
+  {
+   "page": "voprosy",
+   "file": "01-PFzqYBjQ.html",
+   "id": "PFzqYBjQ",
+   "type": "html",
+   "style_only": false,
+   "label": "Вопросы родителей о частном детском саду «Топтыжка» в Ставро"
+  },
+  {
+   "page": "voprosy",
+   "file": "02-sdwVTA7G.html",
+   "id": "sdwVTA7G",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок sdwVTA7G"
+  },
+  {
+   "page": "voprosy",
+   "file": "03-UEw2ns4E.html",
+   "id": "UEw2ns4E",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок UEw2ns4E"
+  },
+  {
+   "page": "voprosy",
+   "file": "04-KusJdh4f.html",
+   "id": "KusJdh4f",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок KusJdh4f"
+  },
+  {
+   "page": "voprosy",
+   "file": "05-DDEretEW.html",
+   "id": "DDEretEW",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок DDEretEW"
+  },
+  {
+   "page": "voprosy",
+   "file": "06-TSduKMmL.html",
+   "id": "TSduKMmL",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок TSduKMmL"
+  },
+  {
+   "page": "voprosy",
+   "file": "07-hvHeYKeu.html",
+   "id": "hvHeYKeu",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок hvHeYKeu"
+  },
+  {
+   "page": "voprosy",
+   "file": "08-dnLtVnSu.html",
+   "id": "dnLtVnSu",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок dnLtVnSu"
+  },
+  {
+   "page": "voprosy",
+   "file": "09-ecpMWhni.html",
+   "id": "ecpMWhni",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок ecpMWhni"
+  },
+  {
+   "page": "voprosy",
+   "file": "10-nSg7u7KM.html",
+   "id": "nSg7u7KM",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок nSg7u7KM"
+  },
+  {
+   "page": "voprosy",
+   "file": "11-tsiPDF6c.html",
+   "id": "tsiPDF6c",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок tsiPDF6c"
+  },
+  {
+   "page": "voprosy",
+   "file": "12-qQifYqpR.html",
+   "id": "qQifYqpR",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок qQifYqpR"
+  },
+  {
+   "page": "yasli-stavropol",
+   "file": "01-AbSRHazy.html",
+   "id": "AbSRHazy",
+   "type": "html",
+   "style_only": false,
+   "label": "Частные ясли в Ставрополе для малышей от 1 года"
+  },
+  {
+   "page": "yasli-stavropol",
+   "file": "02-MMskSFST.html",
+   "id": "MMskSFST",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок MMskSFST"
+  },
+  {
+   "page": "yasli-stavropol",
+   "file": "03-nvLdazQE.html",
+   "id": "nvLdazQE",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок nvLdazQE"
+  },
+  {
+   "page": "yasli-stavropol",
+   "file": "04-yGWARSwr.html",
+   "id": "yGWARSwr",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок yGWARSwr"
+  },
+  {
+   "page": "yasli-stavropol",
+   "file": "05-q4ABkfVB.html",
+   "id": "q4ABkfVB",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок q4ABkfVB"
+  },
+  {
+   "page": "yasli-stavropol",
+   "file": "06-AhTqA3vi.html",
+   "id": "AhTqA3vi",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок AhTqA3vi"
+  },
+  {
+   "page": "yasli-stavropol",
+   "file": "07-KtPpRpbF.html",
+   "id": "KtPpRpbF",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок KtPpRpbF"
+  },
+  {
+   "page": "yasli-stavropol",
+   "file": "08-qbZqHkb5.html",
+   "id": "qbZqHkb5",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок qbZqHkb5"
+  },
+  {
+   "page": "yasli-stavropol",
+   "file": "09-bpQuNjgn.html",
+   "id": "bpQuNjgn",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок bpQuNjgn"
+  },
+  {
+   "page": "yasli-stavropol",
+   "file": "10-MsbTVkxa.html",
+   "id": "MsbTVkxa",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок MsbTVkxa"
+  },
+  {
+   "page": "yasli-stavropol",
+   "file": "11-ayMdqFTR.html",
+   "id": "ayMdqFTR",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок ayMdqFTR"
+  },
+  {
+   "page": "podgotovka-k-shkole",
+   "file": "01-kLrh6unP.html",
+   "id": "kLrh6unP",
+   "type": "html",
+   "style_only": false,
+   "label": "Подготовка к школе в частном детском саду в Ставрополе"
+  },
+  {
+   "page": "podgotovka-k-shkole",
+   "file": "02-Hd2KNjKp.html",
+   "id": "Hd2KNjKp",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок Hd2KNjKp"
+  },
+  {
+   "page": "podgotovka-k-shkole",
+   "file": "03-4yXTKubj.html",
+   "id": "4yXTKubj",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок 4yXTKubj"
+  },
+  {
+   "page": "podgotovka-k-shkole",
+   "file": "04-9qnXnkNU.html",
+   "id": "9qnXnkNU",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок 9qnXnkNU"
+  },
+  {
+   "page": "podgotovka-k-shkole",
+   "file": "05-bzb9iaui.html",
+   "id": "bzb9iaui",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок bzb9iaui"
+  },
+  {
+   "page": "podgotovka-k-shkole",
+   "file": "06-TSEsBeMK.html",
+   "id": "TSEsBeMK",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок TSEsBeMK"
+  },
+  {
+   "page": "podgotovka-k-shkole",
+   "file": "07-g9QWT6nq.html",
+   "id": "g9QWT6nq",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок g9QWT6nq"
+  },
+  {
+   "page": "podgotovka-k-shkole",
+   "file": "08-Ac8qjVyk.html",
+   "id": "Ac8qjVyk",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок Ac8qjVyk"
+  },
+  {
+   "page": "podgotovka-k-shkole",
+   "file": "09-3mCbab22.html",
+   "id": "3mCbab22",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок 3mCbab22"
+  },
+  {
+   "page": "podgotovka-k-shkole",
+   "file": "10-kFuvscRn.html",
+   "id": "kFuvscRn",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок kFuvscRn"
+  },
+  {
+   "page": "podgotovka-k-shkole",
+   "file": "11-tWwWmsmp.html",
+   "id": "tWwWmsmp",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок tWwWmsmp"
+  },
+  {
+   "page": "sad-v-subbotu",
+   "file": "01-ekmkqFPt.html",
+   "id": "ekmkqFPt",
+   "type": "html",
+   "style_only": false,
+   "label": "Детский сад в субботу в Ставрополе"
+  },
+  {
+   "page": "sad-v-subbotu",
+   "file": "02-LVtvQAFA.html",
+   "id": "LVtvQAFA",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок LVtvQAFA"
+  },
+  {
+   "page": "sad-v-subbotu",
+   "file": "03-fLreUaCd.html",
+   "id": "fLreUaCd",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок fLreUaCd"
+  },
+  {
+   "page": "sad-v-subbotu",
+   "file": "04-C3KTgwYZ.html",
+   "id": "C3KTgwYZ",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок C3KTgwYZ"
+  },
+  {
+   "page": "sad-v-subbotu",
+   "file": "05-KBFYVsmq.html",
+   "id": "KBFYVsmq",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок KBFYVsmq"
+  },
+  {
+   "page": "sad-v-subbotu",
+   "file": "06-73wh59Bt.html",
+   "id": "73wh59Bt",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок 73wh59Bt"
+  },
+  {
+   "page": "sad-v-subbotu",
+   "file": "07-tCxXcDpu.html",
+   "id": "tCxXcDpu",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок tCxXcDpu"
+  },
+  {
+   "page": "sad-v-subbotu",
+   "file": "08-ihhUcufi.html",
+   "id": "ihhUcufi",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок ihhUcufi"
+  },
+  {
+   "page": "sad-v-subbotu",
+   "file": "09-gNpz3xLg.html",
+   "id": "gNpz3xLg",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок gNpz3xLg"
+  },
+  {
+   "page": "sad-v-subbotu",
+   "file": "10-YLNKqQRu.html",
+   "id": "YLNKqQRu",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок YLNKqQRu"
+  },
+  {
+   "page": "sad-v-subbotu",
+   "file": "11-DeAZAQyG.html",
+   "id": "DeAZAQyG",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок DeAZAQyG"
+  },
+  {
+   "page": "tseny",
+   "file": "01-2zAZpGAG.html",
+   "id": "2zAZpGAG",
+   "type": "html",
+   "style_only": false,
+   "label": "Цены на частный детский сад в Ставрополе"
+  },
+  {
+   "page": "tseny",
+   "file": "02-8Ah5BaYB.html",
+   "id": "8Ah5BaYB",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок 8Ah5BaYB"
+  },
+  {
+   "page": "tseny",
+   "file": "03-GDbrcHqF.html",
+   "id": "GDbrcHqF",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок GDbrcHqF"
+  },
+  {
+   "page": "tseny",
+   "file": "04-rJj5wGbs.html",
+   "id": "rJj5wGbs",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок rJj5wGbs"
+  },
+  {
+   "page": "tseny",
+   "file": "05-Mw4YbV3g.html",
+   "id": "Mw4YbV3g",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок Mw4YbV3g"
+  },
+  {
+   "page": "tseny",
+   "file": "06-WVdCv83V.html",
+   "id": "WVdCv83V",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок WVdCv83V"
+  },
+  {
+   "page": "tseny",
+   "file": "07-7SPidbmZ.html",
+   "id": "7SPidbmZ",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок 7SPidbmZ"
+  },
+  {
+   "page": "tseny",
+   "file": "08-g69CQL7P.html",
+   "id": "g69CQL7P",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок g69CQL7P"
+  },
+  {
+   "page": "tseny",
+   "file": "09-h6qppDXa.html",
+   "id": "h6qppDXa",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок h6qppDXa"
+  },
+  {
+   "page": "tseny",
+   "file": "10-jA2ZSsRz.html",
+   "id": "jA2ZSsRz",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок jA2ZSsRz"
+  },
+  {
+   "page": "tseny",
+   "file": "11-gTNq9f3b.html",
+   "id": "gTNq9f3b",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок gTNq9f3b"
+  },
+  {
+   "page": "tseny",
+   "file": "12-Rp3BvuZp.html",
+   "id": "Rp3BvuZp",
+   "type": "html",
+   "style_only": true,
+   "label": "Блок Rp3BvuZp"
+  },
+  {
+   "page": "politika",
+   "file": "01-eCzRzUv7.html",
+   "id": "eCzRzUv7",
+   "type": "html",
+   "style_only": false,
+   "label": "Политика конфиденциальности"
+  },
+  {
+   "page": "soglasie",
+   "file": "01-XdQCMwzm.html",
+   "id": "XdQCMwzm",
+   "type": "html",
+   "style_only": false,
+   "label": "Согласие на обработку персональных данных"
+  }
+ ],
+ "pages": [
+  [
+   "glavnaya",
+   "Топтыжка",
+   "",
+   38
+  ],
+  [
+   "voprosy",
+   "Вопросы родителей о частном детском саде в Ставрополе",
+   "voprosy",
+   12
+  ],
+  [
+   "yasli-stavropol",
+   "Частные ясли в Ставрополе",
+   "yasli-stavropol",
+   11
+  ],
+  [
+   "podgotovka-k-shkole",
+   "Подготовка к школе в Ставрополе",
+   "podgotovka-k-shkole",
+   11
+  ],
+  [
+   "sad-v-subbotu",
+   "Детский сад в субботу в Ставрополе",
+   "sad-v-subbotu",
+   11
+  ],
+  [
+   "tseny",
+   "Цены на частный детский сад в Ставрополе",
+   "tseny",
+   12
+  ],
+  [
+   "politika",
+   "Политика конфиденциальности",
+   "politika",
+   1
+  ],
+  [
+   "soglasie",
+   "Согласие на обработку персональных данных",
+   "soglasie",
+   1
+  ]
+ ]
+}
