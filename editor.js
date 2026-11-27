@@ -311,6 +311,22 @@
         sendTimer = setTimeout(sendNow, 30000);
       });
   }
+  var lastBlock = null;
+  document.addEventListener('focusin', function (e) { var r = e.target.closest && e.target.closest('.rb'); if (r) lastBlock = r; });
+  document.addEventListener('click', function (e) { var r = e.target.closest && e.target.closest('.rb'); if (r) lastBlock = r; }, true);
+  function sendWish() {
+    if (!TGC) { alert('Пожелание можно отправить из онлайн-версии редактора.'); return; }
+    var where = lastBlock ? lastBlock.getAttribute('data-label') : 'без привязки к месту';
+    var t = prompt('Что вы хотели бы изменить? Например: цвет кнопки, другое фото, поменять местами блоки, добавить раздел.\n\nМесто: ' + where);
+    if (!t || !t.trim()) return;
+    var st = document.getElementById('ed-status');
+    st.textContent = 'Отправляю пожелание…';
+    fetch('https://api.telegram.org/bot' + TGC.token + '/sendMessage', {method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({chat_id: TGC.chat, text: 'Пожелание Татьяны. Страница: ' + document.title.replace('Редактор: ', '') + '. Место: ' + where + '. Текст: ' + t.trim()})})
+      .then(function (r) { return r.json(); })
+      .then(function (j) { if (!j.ok) throw new Error('tg'); st.textContent = '✓ Пожелание отправлено. Спасибо!'; })
+      .catch(function () { st.textContent = 'Не удалось отправить пожелание. Попробуйте ещё раз.'; });
+  }
   document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') sendNow(); });
   if (TGC) document.body.classList.add('online');
   function flash(msg) {
@@ -328,6 +344,7 @@
     '<span class="ed-sp"></span><span id="ed-status">Изменений нет</span><span class="ed-sp"></span>' +
     '<button data-c="saveall" class="main">💾 Сохранить все изменённые</button>' +
     '<button data-c="send" class="main">📤 Отправить правки сейчас</button>' +
+    '<button data-c="wish">✎ Написать пожелание</button>' +
     '<button data-c="export" class="main">⬇ Скачать правки файлом</button>' +
     '<button data-c="index">← Все страницы</button>';
   document.body.appendChild(bar);
@@ -339,6 +356,7 @@
     else if (c === 'saveall') saveAll();
     else if (c === 'export') exportChanges();
     else if (c === 'send') sendNow(true);
+    else if (c === 'wish') sendWish();
     else if (c === 'index') location.href = 'index.html';
     blocks.forEach(function (rb) { markChanged(rb); if (rb.classList.contains('changed')) autosave(rb); });
   });

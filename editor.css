@@ -36,3 +36,4 @@ body{padding-bottom:150px}
 
 body:not(.online) .ed-bar [data-c=send]{display:none}
 body.online .ed-bar [data-c=saveall],body.online .ed-bar [data-c=export],body.online .ed-save{display:none}
+body:not(.online) .ed-bar [data-c=wish]{display:none}
