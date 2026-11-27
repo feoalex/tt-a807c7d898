@@ -1,5 +1,5 @@
 {
- "revision": 189,
+ "revision": 194,
  "manifest": [
   {
    "page": "glavnaya",
@@ -765,6 +765,14 @@
    "type": "html",
    "style_only": false,
    "label": "Согласие на обработку персональных данных"
+  },
+  {
+   "page": "spasibo",
+   "file": "01-u3djqdSE.html",
+   "id": "u3djqdSE",
+   "type": "html",
+   "style_only": false,
+   "label": "Спасибо, я записала вас на просмотр!"
   }
  ],
  "pages": [
@@ -814,6 +822,12 @@
    "soglasie",
    "Согласие на обработку персональных данных",
    "soglasie",
+   1
+  ],
+  [
+   "spasibo",
+   "Спасибо за запись на просмотр",
+   "spasibo",
    1
   ]
  ]
