@@ -9,12 +9,12 @@ body{margin:0}
 .rb [contenteditable="true"]{outline:none;cursor:text}
 .rb [contenteditable="true"]:hover{background:rgba(255,210,63,.18);border-radius:4px}
 .rb [contenteditable="true"]:focus{background:rgba(255,210,63,.3);border-radius:4px;box-shadow:0 0 0 2px rgba(88,178,224,.8)}
-.ed-bar{position:fixed;left:0;right:0;bottom:0;z-index:2147483000;background:#fcfcfc;color:#14141e;border-top:1px solid #e2e8f0;font:14px Segoe UI,sans-serif;display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:10px 14px;box-shadow:0 -10px 15px -3px rgba(0,0,0,.08),0 -4px 6px -4px rgba(0,0,0,.06)}
-.ed-bar button{font:600 14px Segoe UI,sans-serif;border:1px solid #e2e8f0;border-radius:12px;padding:8px 14px;cursor:pointer;background:#f1f5f9;color:#14141e}
+.ed-bar{position:fixed;left:0;right:0;bottom:0;z-index:2147483000;background:#14141e;color:#f1f5f9;border-top:1px solid #2a2a3a;font:14px Segoe UI,sans-serif;display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:10px 14px;box-shadow:0 -10px 20px -4px rgba(0,0,0,.25)}
+.ed-bar button{font:600 14px Segoe UI,sans-serif;border:1px solid #3a3a4d;border-radius:12px;padding:8px 14px;cursor:pointer;background:#232333;color:#f1f5f9}
 .ed-bar button.main{background:#145aff;border-color:#145aff;color:#fff}
 .ed-bar button:hover{filter:brightness(.93)}
 .ed-bar .ed-sp{flex:1}
-.ed-bar #ed-status{color:#6b7280;opacity:1}
+.ed-bar #ed-status{color:#9aa3af;opacity:1}
 .ed-save{position:absolute;top:8px;right:8px;z-index:2147482000;font:600 13px Segoe UI,sans-serif;border:0;border-radius:10px;padding:7px 12px;cursor:pointer;background:#FFD23F;color:#35593A;box-shadow:0 3px 10px rgba(0,0,0,.25);opacity:0;transition:opacity .15s}
 .rb:hover .ed-save,.rb.changed .ed-save{opacity:1}
 .ed-name{position:absolute;top:8px;left:8px;z-index:2147482000;font:600 12px Segoe UI,sans-serif;border-radius:8px;padding:4px 9px;background:rgba(53,89,58,.88);color:#FBF3E0;opacity:0;transition:opacity .15s;pointer-events:none;max-width:60%}
