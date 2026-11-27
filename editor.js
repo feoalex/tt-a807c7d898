@@ -41,14 +41,14 @@
       if (SKIP[el.tagName.toUpperCase()] || el.closest('svg')) return;
       if (hasOwnText(el)) el.setAttribute('contenteditable', 'true');
       // тексты, важные для продвижения: заголовки, вступление и всё, где названо место
-      if (hasOwnText(el) && (/^H[12]$/.test(el.tagName) || el.classList.contains('lead') || /Ставрополь|Кубанск/.test(el.textContent)) && !/^(A|B|SPAN|STRONG|SMALL|CITE|FIGCAPTION|LI)$/.test(el.tagName)) {
+      if (hasOwnText(el) && (el.tagName === 'H1' || (el.tagName === 'H2' && /детск\w* сад|ясли|ясельк|Ставропол|подготовк\w* к школе|выходного дня|суббот|сколько стоит|цен[ыа]/i.test(el.textContent)))) {
         el.setAttribute('data-ed-seo', '1');
         var lupa = document.createElement('span');
         lupa.className = 'ed-lupa';
         lupa.setAttribute('contenteditable', 'false');
         lupa.setAttribute('data-ed-ui', '1');
         lupa.setAttribute('title', 'Этот текст важен для поиска в Яндексе. Лучше не менять.');
-        lupa.innerHTML = '🔍<span class="ed-tip">Этот текст лучше не менять: он совпадает с запросами родителей в Яндексе и Google (например, «частный детский сад в Ставрополе»). Если замените, редактор сначала спросит, уверены ли вы.</span>';
+        lupa.innerHTML = '<span class="ed-ic">🔍</span><span class="ed-tip">Этот текст лучше не менять: он совпадает с запросами родителей в Яндексе и Google (например, «частный детский сад в Ставрополе»). Если замените, редактор сначала спросит, уверены ли вы.</span>';
         el.appendChild(lupa);
       }
     });
