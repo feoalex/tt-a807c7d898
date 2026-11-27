@@ -68,6 +68,20 @@
     rb.addEventListener('input', function () { markChanged(rb); autosave(rb); });
   });
 
+  // при входе в такой текст на правку сразу показываем подсказку у лупы
+  function lupaOf(t) { var el = t.closest && t.closest('[data-ed-seo]'); return el ? el.querySelector(':scope > .ed-lupa') : null; }
+  document.addEventListener('focusin', function (e) {
+    [].forEach.call(document.querySelectorAll('.ed-lupa.auto'), function (x) { x.classList.remove('open', 'auto'); });
+    var l = lupaOf(e.target);
+    if (l && !e.target.closest('.ed-lupa')) { l.classList.add('open', 'auto'); }
+  });
+  document.addEventListener('focusout', function (e) {
+    var l = lupaOf(e.target);
+    if (l && l.classList.contains('auto')) setTimeout(function () {
+      var ae = document.activeElement;
+      if (!(ae && ae.closest && ae.closest('[data-ed-seo]') === e.target.closest('[data-ed-seo]'))) l.classList.remove('open', 'auto');
+    }, 150);
+  });
   // защита текстов для поиска: при первой правке спрашиваем
   document.addEventListener('beforeinput', function (e) {
     var el = e.target.closest && e.target.closest('[data-ed-seo]');
