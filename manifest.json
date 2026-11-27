@@ -1,5 +1,5 @@
 {
- "revision": 183,
+ "revision": 184,
  "manifest": [
   {
    "page": "glavnaya",
@@ -88,15 +88,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "12-mfQr3UTM.html",
-   "id": "mfQr3UTM",
-   "type": "html",
-   "style_only": true,
-   "label": "Блок mfQr3UTM"
-  },
-  {
-   "page": "glavnaya",
-   "file": "13-C7kaE3Dr.html",
+   "file": "12-C7kaE3Dr.html",
    "id": "C7kaE3Dr",
    "type": "html",
    "style_only": true,
@@ -104,7 +96,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "14-Snt2PjvL.html",
+   "file": "13-Snt2PjvL.html",
    "id": "Snt2PjvL",
    "type": "html",
    "style_only": true,
@@ -112,7 +104,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "15-pzFLRg2W.html",
+   "file": "14-pzFLRg2W.html",
    "id": "pzFLRg2W",
    "type": "html",
    "style_only": true,
@@ -120,7 +112,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "16-cHRQrGnu.html",
+   "file": "15-cHRQrGnu.html",
    "id": "cHRQrGnu",
    "type": "html",
    "style_only": true,
@@ -128,7 +120,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "17-ZM4Tpjq7.html",
+   "file": "16-ZM4Tpjq7.html",
    "id": "ZM4Tpjq7",
    "type": "html",
    "style_only": true,
@@ -136,7 +128,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "18-qMc2JNyd.html",
+   "file": "17-qMc2JNyd.html",
    "id": "qMc2JNyd",
    "type": "html",
    "style_only": true,
@@ -144,7 +136,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "19-nVAshTcL.html",
+   "file": "18-nVAshTcL.html",
    "id": "nVAshTcL",
    "type": "html",
    "style_only": true,
@@ -152,7 +144,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "20-nEsFb5rH.html",
+   "file": "19-nEsFb5rH.html",
    "id": "nEsFb5rH",
    "type": "html",
    "style_only": true,
@@ -160,7 +152,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "21-97Ee9BMB.html",
+   "file": "20-97Ee9BMB.html",
    "id": "97Ee9BMB",
    "type": "html",
    "style_only": true,
@@ -168,7 +160,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "22-byh5qYF7.html",
+   "file": "21-byh5qYF7.html",
    "id": "byh5qYF7",
    "type": "html",
    "style_only": true,
@@ -176,7 +168,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "23-exdT96cu.html",
+   "file": "22-exdT96cu.html",
    "id": "exdT96cu",
    "type": "html",
    "style_only": true,
@@ -184,7 +176,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "24-H5nyeXSj.html",
+   "file": "23-H5nyeXSj.html",
    "id": "H5nyeXSj",
    "type": "html",
    "style_only": true,
@@ -192,7 +184,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "25-6z2KYTvG.html",
+   "file": "24-6z2KYTvG.html",
    "id": "6z2KYTvG",
    "type": "html",
    "style_only": true,
@@ -200,7 +192,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "26-viUzp6UT.html",
+   "file": "25-viUzp6UT.html",
    "id": "viUzp6UT",
    "type": "html",
    "style_only": true,
@@ -208,7 +200,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "27-FkuFp69z.html",
+   "file": "26-FkuFp69z.html",
    "id": "FkuFp69z",
    "type": "html",
    "style_only": false,
@@ -216,7 +208,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "28-8tijAP99.html",
+   "file": "27-8tijAP99.html",
    "id": "8tijAP99",
    "type": "html",
    "style_only": true,
@@ -224,7 +216,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "29-yVNAsaus.html",
+   "file": "28-yVNAsaus.html",
    "id": "yVNAsaus",
    "type": "html",
    "style_only": true,
@@ -232,7 +224,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "30-mbZyaLHH.html",
+   "file": "29-mbZyaLHH.html",
    "id": "mbZyaLHH",
    "type": "html",
    "style_only": true,
@@ -240,7 +232,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "31-7RWKfYEM.html",
+   "file": "30-7RWKfYEM.html",
    "id": "7RWKfYEM",
    "type": "html",
    "style_only": true,
@@ -248,7 +240,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "32-usWFtRYw.html",
+   "file": "31-usWFtRYw.html",
    "id": "usWFtRYw",
    "type": "html",
    "style_only": true,
@@ -256,7 +248,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "33-etnAerPk.html",
+   "file": "32-etnAerPk.html",
    "id": "etnAerPk",
    "type": "html",
    "style_only": true,
@@ -264,7 +256,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "34-Unuhzduw.html",
+   "file": "33-Unuhzduw.html",
    "id": "Unuhzduw",
    "type": "html",
    "style_only": true,
@@ -272,7 +264,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "35-uGiGRpLT.html",
+   "file": "34-uGiGRpLT.html",
    "id": "uGiGRpLT",
    "type": "html",
    "style_only": true,
@@ -280,7 +272,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "36-4APsgfMZ.html",
+   "file": "35-4APsgfMZ.html",
    "id": "4APsgfMZ",
    "type": "html",
    "style_only": true,
@@ -288,7 +280,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "37-PvNZGdEh.html",
+   "file": "36-PvNZGdEh.html",
    "id": "PvNZGdEh",
    "type": "html",
    "style_only": true,
@@ -296,7 +288,7 @@
   },
   {
    "page": "glavnaya",
-   "file": "38-qshAcdLD.html",
+   "file": "37-qshAcdLD.html",
    "id": "qshAcdLD",
    "type": "html",
    "style_only": true,
@@ -780,7 +772,7 @@
    "glavnaya",
    "Топтыжка",
    "",
-   38
+   37
   ],
   [
    "voprosy",
