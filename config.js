@@ -1,0 +1,1 @@
+window.TG_CONFIG = {token: '8690378685:AAFhUyVYHWHJLvJXh58kv_4I7QFfB5ldCZQ', chat: '7703882943'};

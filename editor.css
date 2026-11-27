@@ -1,0 +1,38 @@
+/* Служебные стили редактора. На сайт не попадают. */
+body{margin:0}
+.rb{position:relative}
+.rb-style{display:contents}
+.rb-plain{padding:14px 20px;background:#EEF4F8}
+.rb-plain-in{max-width:900px;margin:0 auto;padding:12px 16px;border:2px dashed #9bb7c8;border-radius:12px;font:14px/1.5 Segoe UI,sans-serif;color:#35593A;background:#fff}
+.rb:not(.rb-style):hover{outline:2px dashed rgba(88,178,224,.7);outline-offset:-2px}
+.rb.changed{outline:3px solid #FFD23F !important;outline-offset:-3px}
+.rb [contenteditable="true"]{outline:none;cursor:text}
+.rb [contenteditable="true"]:hover{background:rgba(255,210,63,.18);border-radius:4px}
+.rb [contenteditable="true"]:focus{background:rgba(255,210,63,.3);border-radius:4px;box-shadow:0 0 0 2px rgba(88,178,224,.8)}
+.ed-bar{position:fixed;left:0;right:0;bottom:0;z-index:2147483000;background:#35593A;color:#FBF3E0;font:14px Segoe UI,sans-serif;display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:10px 14px;box-shadow:0 -4px 16px rgba(0,0,0,.25)}
+.ed-bar button{font:600 14px Segoe UI,sans-serif;border:0;border-radius:10px;padding:8px 14px;cursor:pointer;background:#FBF3E0;color:#35593A}
+.ed-bar button.main{background:#FFD23F}
+.ed-bar button:hover{filter:brightness(.93)}
+.ed-bar .ed-sp{flex:1}
+.ed-bar #ed-status{opacity:.9}
+.ed-save{position:absolute;top:8px;right:8px;z-index:2147482000;font:600 13px Segoe UI,sans-serif;border:0;border-radius:10px;padding:7px 12px;cursor:pointer;background:#FFD23F;color:#35593A;box-shadow:0 3px 10px rgba(0,0,0,.25);opacity:0;transition:opacity .15s}
+.rb:hover .ed-save,.rb.changed .ed-save{opacity:1}
+.ed-name{position:absolute;top:8px;left:8px;z-index:2147482000;font:600 12px Segoe UI,sans-serif;border-radius:8px;padding:4px 9px;background:rgba(53,89,58,.88);color:#FBF3E0;opacity:0;transition:opacity .15s;pointer-events:none;max-width:60%}
+.rb:hover .ed-name,.rb.changed .ed-name{opacity:1}
+body{padding-bottom:70px}
+
+.ed-chip{position:fixed;z-index:2147483100;display:flex;gap:8px;align-items:center;flex-wrap:wrap;max-width:min(92vw,520px);background:#fff;color:#35593A;border-radius:14px;padding:10px 12px;font:14px Segoe UI,sans-serif;box-shadow:0 8px 28px rgba(0,0,0,.28);border:2px solid #FFD23F}
+.ed-chip button{font:600 14px Segoe UI,sans-serif;border:0;border-radius:10px;padding:8px 12px;cursor:pointer;background:#FFD23F;color:#35593A}
+.ed-chip button.x{background:#eee;padding:8px 10px}
+@media(max-width:700px){
+.ed-bar{gap:6px;padding:8px 10px}
+.ed-bar button{padding:8px 10px;font-size:13px}
+.ed-bar #ed-status{width:100%;order:9;font-size:12px}
+.ed-bar .ed-sp{display:none}
+.ed-save{opacity:1;top:auto;bottom:8px;right:8px;font-size:12px;padding:6px 10px}
+.ed-name{opacity:1;font-size:11px;top:auto;bottom:8px;left:8px;max-width:55%}
+body{padding-bottom:150px}
+}
+
+body:not(.online) .ed-bar [data-c=send]{display:none}
+body.online .ed-bar [data-c=saveall],body.online .ed-bar [data-c=export],body.online .ed-save{display:none}
