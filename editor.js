@@ -39,6 +39,7 @@
     });
     [].forEach.call(rb.querySelectorAll('*'), function (el) {
       if (SKIP[el.tagName.toUpperCase()] || el.closest('svg')) return;
+      if (el.matches && el.matches('.ico,.patch,.avatar,.logo i')) return;
       if (hasOwnText(el)) el.setAttribute('contenteditable', 'true');
       // тексты, важные для продвижения: заголовки, вступление и всё, где названо место
       if (hasOwnText(el) && (el.tagName === 'H1' || (el.tagName === 'H2' && /детск[а-яё]*\s+сад|ясли|ясельк|Ставропол|подготовк[а-яё]*\s+к\s+школе|выходного\s+дня|суббот|сколько\s+стоит|цен[ыа]/i.test(el.textContent)))) {
@@ -154,6 +155,15 @@
     if (e.target.closest && e.target.closest('.ed-chip')) return;
     var lp = e.target.closest && e.target.closest('.ed-lupa');
     if (lp) { e.preventDefault(); lp.classList.toggle('open'); return; }
+    var ic = e.target.closest && e.target.closest('.ico,.patch,.avatar,.logo i');
+    if (ic && ic.closest('.rb')) {
+      e.preventDefault();
+      lastBlock = ic.closest('.rb');
+      showChip(ic, '<span>Иконка ' + ic.textContent.trim() + '</span>', TGC ? [
+        {label: '✎ Хочу другую иконку', run: function () { iconWish(ic); }}
+      ] : []);
+      return;
+    }
     var im = e.target.closest && e.target.closest('img');
     if (im && im.closest('.rb') && !im.closest('.zb')) {
       e.preventDefault();
@@ -374,6 +384,21 @@
       .then(function (r) { return r.json(); })
       .then(function (j) { if (!j.ok) throw new Error('tg'); st.textContent = '✓ Пожелание отправлено. Спасибо!'; })
       .catch(function () { st.textContent = 'Не удалось отправить пожелание. Попробуйте ещё раз.'; });
+  }
+  function iconWish(ic) {
+    var card = ic.closest('.card,.fact,.daycard');
+    var near = card && card.querySelector('h3') ? card.querySelector('h3').textContent.trim() : '';
+    var where = (lastBlock && lastBlock.getAttribute('data-label')) || '';
+    var t = prompt('Какую иконку вы хотели бы вместо этой? Опишите словами, например: сердечко, книжка, солнышко, ложка.');
+    if (!t || !t.trim()) return;
+    var st = document.getElementById('ed-status');
+    st.textContent = 'Отправляю пожелание про иконку…';
+    var txt = ('Иконка-пожелание Татьяны. Страница: ' + document.title.replace('Редактор: ', '') + '. Раздел: ' + where +
+               '. Иконка: ' + ic.textContent.trim() + (near ? ' возле заголовка «' + near + '»' : '') + '. Пожелание: ' + t.trim()).slice(0, 1000);
+    fetch('https://api.telegram.org/bot' + TGC.token + '/sendMessage', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({chat_id: TGC.chat, text: txt})})
+      .then(function (r) { return r.json(); })
+      .then(function (j) { if (!j.ok) throw new Error('tg'); st.textContent = '✓ Пожелание про иконку отправлено. Спасибо!'; })
+      .catch(function () { st.textContent = 'Не удалось отправить. Попробуйте ещё раз.'; });
   }
   function photoWish(im) {
     var where = (lastBlock && lastBlock.getAttribute('data-label')) || '';
