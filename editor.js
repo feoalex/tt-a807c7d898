@@ -40,6 +40,10 @@
     [].forEach.call(rb.querySelectorAll('*'), function (el) {
       if (SKIP[el.tagName.toUpperCase()] || el.closest('svg')) return;
       if (hasOwnText(el)) el.setAttribute('contenteditable', 'true');
+      // тексты, важные для продвижения: заголовки, вступление и всё, где названо место
+      if (hasOwnText(el) && (/^H[12]$/.test(el.tagName) || el.classList.contains('lead') || /Ставрополь|Кубанск/.test(el.textContent)) && !/^(A|B|SPAN|STRONG|SMALL|CITE|FIGCAPTION|LI)$/.test(el.tagName)) {
+        el.setAttribute('data-ed-seo', '1');
+      }
     });
     var name = document.createElement('div');
     name.className = 'ed-name';
@@ -57,6 +61,15 @@
     rb.addEventListener('input', function () { markChanged(rb); autosave(rb); });
   });
 
+  // защита текстов для поиска: при первой правке спрашиваем
+  document.addEventListener('beforeinput', function (e) {
+    var el = e.target.closest && e.target.closest('[data-ed-seo]');
+    if (!el || el.hasAttribute('data-ed-ok')) return;
+    e.preventDefault();
+    if (confirm('Этот текст нужен для продвижения сайта: по словам в нём (например «частный детский сад», «Ставрополь», «ясли») вас находят в Яндексе и Google.\n\nЕсли его изменить или убрать эти слова, сайт может хуже находиться.\n\nУверены, что хотите заменить? После «ОК» нажмите нужную клавишу ещё раз.')) {
+      el.setAttribute('data-ed-ok', '1');
+    }
+  }, true);
   // ссылки и кнопки не уводят со страницы, пока правим
   var PAGES = {
     'glavnaya': 'Главная', 'yasli-stavropol': 'Ясли', 'podgotovka-k-shkole': 'Подготовка к школе',
@@ -182,6 +195,7 @@
     var c = rb.cloneNode(true);
     [].forEach.call(c.querySelectorAll('.ed-save,.ed-name'), function (x) { x.remove(); });
     [].forEach.call(c.querySelectorAll('[contenteditable]'), function (x) { x.removeAttribute('contenteditable'); });
+    [].forEach.call(c.querySelectorAll('[data-ed-seo],[data-ed-ok]'), function (x) { x.removeAttribute('data-ed-seo'); x.removeAttribute('data-ed-ok'); });
     [].forEach.call(c.querySelectorAll('[data-ed-src],[data-ed-poster]'), function (x) {
       ['src', 'poster'].forEach(function (at) {
         var o = x.getAttribute('data-ed-' + at);
@@ -303,7 +317,9 @@
     var snap = list.map(function (rb) { return [rb, data.blocks[list.indexOf(rb)].html]; });
     var fd = new FormData();
     fd.append('chat_id', TGC.chat);
-    fd.append('caption', 'Правки Татьяны: страница «' + document.title.replace('Редактор: ', '') + '», блоков: ' + list.length);
+    var seoN = 0; list.forEach(function (rb) { seoN += rb.querySelectorAll('[data-ed-ok]').length; });
+    fd.append('caption', 'Правки Татьяны: страница «' + document.title.replace('Редактор: ', '') + '», блоков: ' + list.length +
+      (seoN ? '. ВНИМАНИЕ: изменены тексты, важные для продвижения (' + seoN + ' шт.), Татьяна подтвердила замену' : ''));
     fd.append('document', new Blob([JSON.stringify(data, null, 1)], {type: 'application/json'}),
               'pravki-' + data.page + '-' + new Date().toISOString().slice(0, 16).replace(/[:T]/g, '-') + '.json');
     var st = document.getElementById('ed-status');
