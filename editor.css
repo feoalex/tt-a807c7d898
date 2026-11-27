@@ -39,4 +39,9 @@ body.online .ed-bar [data-c=saveall],body.online .ed-bar [data-c=export],body.on
 body:not(.online) .ed-bar [data-c=wish]{display:none}
 
 .rb [data-ed-seo]{border-bottom:2px dashed rgba(88,178,224,.85);padding-bottom:1px}
-.rb [data-ed-seo]::after{content:" 🔍";font-size:.55em;opacity:.7;font-family:Segoe UI,sans-serif}
+
+
+.rb [data-ed-seo]{position:relative}
+.ed-lupa{position:absolute;top:-6px;right:0;z-index:50;width:26px;height:26px;display:grid;place-items:center;font:14px Segoe UI,sans-serif;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:help;user-select:none;line-height:1;letter-spacing:0;text-transform:none;font-weight:400}
+.ed-lupa .ed-tip{display:none;position:absolute;top:30px;right:0;width:min(280px,80vw);padding:10px 12px;border-radius:12px;background:#35593A;color:#FBF3E0;font:13px/1.4 Segoe UI,sans-serif;text-align:left;box-shadow:0 8px 24px rgba(0,0,0,.3);white-space:normal;text-transform:none;letter-spacing:0;font-style:normal;font-weight:400}
+.ed-lupa:hover .ed-tip,.ed-lupa.open .ed-tip{display:block}

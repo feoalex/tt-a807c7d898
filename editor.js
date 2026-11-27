@@ -43,6 +43,12 @@
       // тексты, важные для продвижения: заголовки, вступление и всё, где названо место
       if (hasOwnText(el) && (/^H[12]$/.test(el.tagName) || el.classList.contains('lead') || /Ставрополь|Кубанск/.test(el.textContent)) && !/^(A|B|SPAN|STRONG|SMALL|CITE|FIGCAPTION|LI)$/.test(el.tagName)) {
         el.setAttribute('data-ed-seo', '1');
+        var lupa = document.createElement('span');
+        lupa.className = 'ed-lupa';
+        lupa.setAttribute('contenteditable', 'false');
+        lupa.setAttribute('data-ed-ui', '1');
+        lupa.innerHTML = '🔍<span class="ed-tip">Этот текст лучше не менять: он совпадает с запросами родителей в Яндексе и Google (например, «частный детский сад в Ставрополе»). Если замените, редактор сначала спросит, уверены ли вы.</span>';
+        el.appendChild(lupa);
       }
     });
     var name = document.createElement('div');
@@ -131,6 +137,8 @@
   }
   document.addEventListener('click', function (e) {
     if (e.target.closest && e.target.closest('.ed-chip')) return;
+    var lp = e.target.closest && e.target.closest('.ed-lupa');
+    if (lp) { e.preventDefault(); lp.classList.toggle('open'); return; }
     var im = e.target.closest && e.target.closest('img');
     if (im && im.closest('.rb') && !im.closest('.zb')) {
       e.preventDefault();
@@ -193,7 +201,7 @@
 
   function serialize(rb) {
     var c = rb.cloneNode(true);
-    [].forEach.call(c.querySelectorAll('.ed-save,.ed-name'), function (x) { x.remove(); });
+    [].forEach.call(c.querySelectorAll('.ed-save,.ed-name,.ed-lupa'), function (x) { x.remove(); });
     [].forEach.call(c.querySelectorAll('[contenteditable]'), function (x) { x.removeAttribute('contenteditable'); });
     [].forEach.call(c.querySelectorAll('[data-ed-seo],[data-ed-ok]'), function (x) { x.removeAttribute('data-ed-seo'); x.removeAttribute('data-ed-ok'); });
     [].forEach.call(c.querySelectorAll('[data-ed-src],[data-ed-poster]'), function (x) {
