@@ -41,7 +41,7 @@
       if (SKIP[el.tagName.toUpperCase()] || el.closest('svg')) return;
       if (hasOwnText(el)) el.setAttribute('contenteditable', 'true');
       // тексты, важные для продвижения: заголовки, вступление и всё, где названо место
-      if (hasOwnText(el) && (el.tagName === 'H1' || (el.tagName === 'H2' && /детск\w* сад|ясли|ясельк|Ставропол|подготовк\w* к школе|выходного дня|суббот|сколько стоит|цен[ыа]/i.test(el.textContent)))) {
+      if (hasOwnText(el) && (el.tagName === 'H1' || (el.tagName === 'H2' && /детск[а-яё]*\s+сад|ясли|ясельк|Ставропол|подготовк[а-яё]*\s+к\s+школе|выходного\s+дня|суббот|сколько\s+стоит|цен[ыа]/i.test(el.textContent)))) {
         el.setAttribute('data-ed-seo', '1');
         var lupa = document.createElement('span');
         lupa.className = 'ed-lupa';
