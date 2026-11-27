@@ -24,29 +24,15 @@ body{padding-bottom:70px}
 .ed-chip{position:fixed;z-index:2147483100;display:flex;gap:8px;align-items:center;flex-wrap:wrap;max-width:min(92vw,520px);background:#fff;color:#35593A;border-radius:14px;padding:10px 12px;font:14px Segoe UI,sans-serif;box-shadow:0 8px 28px rgba(0,0,0,.28);border:2px solid #FFD23F}
 .ed-chip button{font:600 14px Segoe UI,sans-serif;border:0;border-radius:10px;padding:8px 12px;cursor:pointer;background:#FFD23F;color:#35593A}
 .ed-chip button.x{background:#eee;padding:8px 10px}
+.ed-bar .sm{display:none}
 @media(max-width:700px){
-.ed-bar{gap:6px;padding:8px 10px}
-.ed-bar button{padding:8px 10px;font-size:13px}
-.ed-bar #ed-status{width:100%;order:9;font-size:12px}
+.ed-bar{gap:6px;padding:8px 10px;padding-bottom:calc(8px + env(safe-area-inset-bottom))}
+.ed-bar button{padding:9px 11px;font-size:14px;min-height:40px}
+.ed-bar .lg{display:none}
+.ed-bar .sm{display:inline}
+.ed-bar #ed-status{width:100%;order:9;font-size:12px;line-height:1.2}
 .ed-bar .ed-sp{display:none}
 .ed-save{opacity:1;top:auto;bottom:8px;right:8px;font-size:12px;padding:6px 10px}
 .ed-name{opacity:1;font-size:11px;top:auto;bottom:8px;left:8px;max-width:55%}
-body{padding-bottom:150px}
+body{padding-bottom:130px}
 }
-
-body:not(.online) .ed-bar [data-c=send]{display:none}
-body.online .ed-bar [data-c=saveall],body.online .ed-bar [data-c=export],body.online .ed-save{display:none}
-body:not(.online) .ed-bar [data-c=wish]{display:none}
-
-
-
-
-.rb [data-ed-seo]{position:relative;border-bottom:1px dashed rgba(88,178,224,.55)}
-.ed-lupa{position:static;font:14px Segoe UI,sans-serif;line-height:1;letter-spacing:0;text-transform:none;font-weight:400;font-style:normal}
-.ed-lupa .ed-ic{position:absolute;top:-26px;right:0;z-index:50;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25);cursor:help;user-select:none;opacity:0;transition:opacity .15s}
-.rb [data-ed-seo]:hover > .ed-lupa .ed-ic,.rb [data-ed-seo]:focus-within > .ed-lupa .ed-ic,.ed-lupa .ed-ic:hover,.ed-lupa.open .ed-ic{opacity:1}
-.ed-lupa .ed-tip{display:none;position:absolute;top:calc(100% + 8px);right:0;z-index:60;width:min(280px,80vw);padding:10px 12px;border-radius:12px;background:#35593A;color:#FBF3E0;font:13px/1.4 Segoe UI,sans-serif;text-align:left;box-shadow:0 8px 24px rgba(0,0,0,.3);white-space:normal;cursor:default}
-.ed-lupa:hover .ed-tip,.ed-lupa.open .ed-tip{display:block}
-
-.rb .ico,.rb .patch,.rb .avatar,.rb .logo i{cursor:pointer}
-.rb .ico:hover,.rb .avatar:hover,.rb .logo i:hover{outline:2px dashed rgba(88,178,224,.85);outline-offset:3px;border-radius:10px}

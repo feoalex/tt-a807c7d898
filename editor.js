@@ -429,13 +429,13 @@
   bar.setAttribute('contenteditable', 'false');
   bar.innerHTML =
     '<button data-c="bold"><b>Ж</b></button><button data-c="italic"><i>К</i></button>' +
-    '<button data-c="undo">↶ Отменить</button><button data-c="redo">↷ Вернуть</button>' +
+    '<button data-c="undo" aria-label="Отменить">↶<span class="lg"> Отменить</span></button><button data-c="redo" aria-label="Вернуть">↷<span class="lg"> Вернуть</span></button>' +
     '<span class="ed-sp"></span><span id="ed-status">Изменений нет</span><span class="ed-sp"></span>' +
     '<button data-c="saveall" class="main">💾 Сохранить все изменённые</button>' +
-    '<button data-c="send" class="main">📤 Отправить правки сейчас</button>' +
-    '<button data-c="wish">✎ Написать пожелание</button>' +
+    '<button data-c="send" class="main">📤 <span class="lg">Отправить правки сейчас</span><span class="sm">Отправить</span></button>' +
+    '<button data-c="wish">✎ <span class="lg">Написать пожелание</span><span class="sm">Пожелание</span></button>' +
     '<button data-c="export" class="main">⬇ Скачать правки файлом</button>' +
-    '<button data-c="index">← Все страницы</button>';
+    '<button data-c="index">← <span class="lg">Все страницы</span><span class="sm">Страницы</span></button>';
   document.body.appendChild(bar);
   bar.addEventListener('mousedown', function (e) { e.preventDefault(); });
   bar.addEventListener('click', function (e) {
